@@ -1,6 +1,6 @@
 Name:		texlive-crimsonpro
 Version:	64565
-Release:	1
+Release:	2
 Summary:	CrimsonPro fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/crimsonpro
