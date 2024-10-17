@@ -3,7 +3,7 @@ Version:	64565
 Release:	2
 Summary:	CrimsonPro fonts with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/crimsonpro
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/crimsonpro
 License:	ofl lppl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crimsonpro.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crimsonpro.doc.r%{version}.tar.xz
