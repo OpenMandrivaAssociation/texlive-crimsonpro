@@ -12,10 +12,18 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/crimsonpro.r%{tl
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/crimsonpro.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 The CrimsonPro fonts are designed by Jacques Le Bailly and derived from
 the Crimson Text fonts designed by Sebastian Kosch. The family includes
 eight weights and italics for each weight.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from crimsonpro:
+Map CrimsonPro.map
+TL_DROPIN_EOF
